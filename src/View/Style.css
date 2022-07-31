@@ -1,0 +1,13 @@
+.page-bg{
+    height: 100vh;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+}
+
+.task-grid{
+    overflow-y: scroll !important;
+    height: 50vh;
+}
