@@ -1,4 +1,4 @@
-exports.saveUser = async (value) =>{
+export const saveUser = async (value) =>{
     try {
         let data = JSON.stringify(value)
          await localStorage.setItem('user',data)
@@ -9,7 +9,7 @@ exports.saveUser = async (value) =>{
 }
 
 
-exports.getUser = async () =>{
+export const getUser = async () =>{
     try {
         let data = await localStorage.getItem('user')
         if(!data){
@@ -22,7 +22,7 @@ exports.getUser = async () =>{
     }
 }
 
-exports.removeUser = async () =>{
+export const removeUser = async () =>{
     try {
         await localStorage.removeItem('user')
     } catch (error) {
